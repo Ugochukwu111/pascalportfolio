@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Sora:wght@100..800&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* hides scrollbar */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+}
+
+:root{
+  --white: #f9f9f9;   
+  --black: #333333;  
+  --green: #a8d5ba;  
+  --red: #f5a5a5;     
+  --blue: #a3c4f3;
+  --grey: #b0adad;
+
+    /* Dark Theme */
+  --white-dark: #1a1a1a;   
+  --black-dark: #000000;  
+  --green-dark: #2e5d46;   
+  --red-dark: #7b2e2e;     
+  --blue-dark: #2c3e66;  
+
+
+
+  /* text */
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Sora', sans-serif;
+  --font-ui: 'Exo 2', sans-serif;            
+  --font-ui-alt: 'Orbitron', sans-serif;
+}
+
+html{
+}
+
+body{
+    font-family: 'Sora', sans-serif;
+  font-weight: 400;
+    width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;   /* optional soft background */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* helps imge relax inside containers */
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  padding: .8em 1.3em;
+  border-radius: .5rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(245, 252, 255, 0.929);
+  margin: .5em ;
+  cursor: pointer;
+  transition: all 250ms ease;
+  text-transform: capitalize;
+  font-family: var(--font-ui);
+}
+button:hover{
+  transform:  scale(1.05);
+}
+button:active{
+  opacity: .8;
+}
+.main-and-footer-container{
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+section, footer{
+  padding: 3em .8em;
+  /* overflow: hidden; */
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.3rem); /* Between 32px and 48px */
+}
+h2 {
+  font-size: clamp(1.1rem, 4.5vw, 1.9rem); /* Between 28px and 40px */
+}
+h3 {
+  font-size: clamp(1rem, 4vw, 1.6rem); /* Between 25px and 35px */
+}
+h4 {
+  font-size: clamp(1.4rem, 3.5vw, 2rem); /* Between 22px and 32px */
+}
+h5 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem); /* Between 19px and 28px */
+}
+h6 {
+  font-size: clamp(1.4rem, 2.5vw, 1rem); /* Between 16px and 25px */
+}
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Between 16px and 19px */
+  line-height: 1.3;
+  color: var(--black);
+}
+
+/* ====== DISPLAYS utils ===== */
+.d-flex{display: flex;}
+.d-grid{display: grid;}
+.d-block{display: block;}
+.d-inline-b{display: inline-block;}
+
+/* FLEX DIRECTION */
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+
+/* DISPLAY CENTERS */
+.flex-center{ display: flex; align-items: center; justify-content: center;}
+.align-center{align-items: center;}
+.align-start{align-items: start;}
+
+.grid-center{display: grid; place-items: center;}
+.block-center{display: block; margin-inline: auto;}
+
+/* ====== TEXT COLOR  UTILITIES ====== */
+.text-white        { color: var(--white); }
+.text-black        { color: var(--black); }
+.text-green        { color: var(--green); }
+.text-red          { color: var(--red); }
+.text-blue         { color: var(--blue); }
+.text-grey {color: var(--grey);}
+
+.text-white-dark   { color: var(--white-dark); }
+.text-black-dark   { color: var(--black-dark); }
+.text-green-dark   { color: var(--green-dark); }
+.text-red-dark     { color: var(--red-dark); }
+.text-blue-dark    { color: var(--blue-dark); }
+
+/* ====== BACKGROUND UTILITIES ====== */
+.bg-white          { background-color: var(--white); }
+.bg-black          { background-color: var(--black); }
+.bg-green          { background-color: var(--green); }
+.bg-red            { background-color: var(--red); }
+.bg-blue           { background-color: var(--blue); }
+
+.bg-white-dark     { background-color: var(--white-dark); }
+.bg-black-dark     { background-color: var(--black-dark); }
+.bg-green-dark     { background-color: var(--green-dark); }
+.bg-red-dark       { background-color: var(--red-dark); }
+.bg-blue-dark      { background-color: var(--blue-dark); }
+
+.text-start{text-align: start;}
+.text-center{text-align: center;}
+.text-end{text-align: end;}
+.FWB{font-weight: bolder;}
+
+/* tools used utils */
+.html-color-style   { background-color: #E34F26; color: #Ffff; }
+.css-color-style    { background-color: #1572B6; color: #fff; }
+.js-color-style     { background-color: #F7DF1E; color: #323330; }
+.node-color-style   { background-color: #339933; color: #000; }
+.mongo-color-style  { background-color: #47A248; color: #fff; }
+.express-color-style{ background-color: #303030; color: #AAAAAA; }
+.git-color-style    { background-color: #F05032; color: #F69291; }
+.github-color-style { background-color: #181717; color: #6E5494; }
+.devtools-color-style{background-color: #4285F4; color: #e7ff0c; }
+.ai-color-style     { background-color: #000000; color: #fff; }
+
+
+/* ========== RANDOM UTILS ACROSS THE SITE ======== */
+
+.notification-container{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  padding: 1em;
+
+  background: rgba(0, 0, 0, 0.3); /* transparent dark overlay */
+  backdrop-filter: blur(1px);     /* blur the background */
+  -webkit-backdrop-filter: blur(1px); /* Safari support */
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.notification-container.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.notification-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.notification-popup {
+  border-radius: 16px;
+  padding: 2em;
+  max-width: 400px;
+  width: 100%;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* soft shadow */
+  text-align: center;
+  animation: fadeInScale 0.3s ease; /* subtle entry animation */
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.text-icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.text-icon-container  svg{
+  margin-inline: .5em;
+  display: inline-block;
+}
+
+.btn-style{
+    padding: .8em 1.3em;
+  border-radius: .5rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(245, 252, 255, 0.929);
+  margin: .5em ;
+  cursor: pointer;
+  transition: all 250ms ease;
+  text-transform: capitalize;
+  font-family: var(--font-ui);
+}
