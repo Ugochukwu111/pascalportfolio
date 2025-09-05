@@ -69,13 +69,14 @@ h2{
 .profile-pic-container{
   border: 1px solid var(--black);
   box-shadow: 3px 3px 5px var(--grey);
-  width: clamp(180px, 20vw, 200px);  /* min 100px, scales with 20vw, max 200px */
-  height: clamp(180px, 20vw, 200px); 
+  width: 200px;  /* min 100px, scales with 20vw, max 200px */
+  height: 200px; 
   aspect-ratio: 1/1;
   margin: 1em;
   border-radius: 50%;
   overflow: hidden;
 }
+
 
 .intro-btn-container{
   padding: 1em;
@@ -112,6 +113,7 @@ h2{
   height: 230px;
   background-color: var(--blue);
   border: 1px solid var(--grey);
+  cursor: pointer;
 }
 
 .project-description{
@@ -261,6 +263,7 @@ footer{
   }
   .aside-main-wrapper{
   height: auto;
+
   }
   aside{
     width: 100%;
@@ -274,7 +277,7 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    min-height: 400px;
+    min-height: 600px;  
     padding-top: 3em;
   }
   h2{
