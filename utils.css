@@ -26,6 +26,7 @@
   --red: #f5a5a5;     
   --blue: #a3c4f3;
   --grey: #b0adad;
+  --blueish: #1E90FF;
 
     /* Dark Theme */
   --white-dark: #1a1a1a;   
@@ -43,6 +44,7 @@
 }
 
 html{
+  scroll-behavior:smooth;
 }
 
 body{
@@ -109,7 +111,7 @@ section, footer{
 
 h1, h2, h3 {
   font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 
@@ -147,6 +149,8 @@ p {
 .flex-column{flex-direction: column;}
 .flex-row{flex-direction: row;}
 
+.justify-center{justify-content: center;}
+
 /* DISPLAY CENTERS */
 .flex-center{ display: flex; align-items: center; justify-content: center;}
 .align-center{align-items: center;}
@@ -155,13 +159,28 @@ p {
 .grid-center{display: grid; place-items: center;}
 .block-center{display: block; margin-inline: auto;}
 
+       /* Font Utilities */
+.font-heading {
+  font-family: var(--font-heading);
+}
+.font-body {
+  font-family: var(--font-body);
+}
+.font-ui {
+  font-family: var(--font-ui);
+}
+.font-ui-alt{
+  font-family: var(--font-ui-alt);
+}
+
 /* ====== TEXT COLOR  UTILITIES ====== */
 .text-white        { color: var(--white); }
 .text-black        { color: var(--black); }
 .text-green        { color: var(--green); }
 .text-red          { color: var(--red); }
 .text-blue         { color: var(--blue); }
-.text-grey {color: var(--grey);}
+.text-grey          {color: var(--grey);}
+.text-blusish      {color: var(--blueish);}
 
 .text-white-dark   { color: var(--white-dark); }
 .text-black-dark   { color: var(--black-dark); }
@@ -186,6 +205,11 @@ p {
 .text-center{text-align: center;}
 .text-end{text-align: end;}
 .FWB{font-weight: bolder;}
+
+  /* ================= PADDING UTILITIES ================== */ 
+  .PS{padding: .5em;}
+  .P{padding: 1em;}
+  .PL{padding: 1.5em;}
 
 /* tools used utils */
 .html-color-style   { background-color: #E34F26; color: #Ffff; }
@@ -266,7 +290,7 @@ p {
 }
 
 .btn-style{
-    padding: .8em 1.3em;
+  padding: .8em 1.3em;
   border-radius: .5rem;
   font-weight: 700;
   border: none;

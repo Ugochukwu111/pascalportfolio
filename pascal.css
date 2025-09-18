@@ -54,6 +54,9 @@ aside{
 }
 .main-and-footer-container{
   height: 100%;
+   -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    scroll-behavior: smooth; 
+    border: 5px solid transparent;
 }
 
 ul{
@@ -69,8 +72,8 @@ h2{
 .profile-pic-container{
   border: 1px solid var(--black);
   box-shadow: 3px 3px 5px var(--grey);
-  width: 200px;  /* min 100px, scales with 20vw, max 200px */
-  height: 200px; 
+  width: 130px;  /* min 100px, scales with 20vw, max 200px */
+  height: 130px; 
   aspect-ratio: 1/1;
   margin: 1em;
   border-radius: 50%;
@@ -168,15 +171,17 @@ h2{
 .experience-list li{
   display: flex;
   justify-content: space-between;
-  padding: 1em ;
+  align-items: center;
+  padding: .25em ;
   flex-wrap: wrap;
+  word-break: break-all;
 }
 
 .company-name{
   background-color: var(--black);
   font-weight: 300;
   color: var(--white);
-  padding: .5em;
+  /* padding: .5em; */
   border-radius: .5rem;
 }
 

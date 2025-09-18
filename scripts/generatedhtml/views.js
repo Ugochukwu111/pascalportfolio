@@ -49,3 +49,24 @@ export function generateMoreProductInfo(image, name, moreInfo){
 
   return html;
 }
+
+export function generateEcperienceListHTML (timeLine, role, company){
+  const html = `
+                   <li>
+                  <span class="text-grey">
+                    ${timeLine}
+                  </span>
+
+                  <div>
+                      <span class="PS">
+                        ${role} 
+                      </span>
+                      <button class="company-name font-body ">
+                        @ ${company}
+                      </button>
+                  </div>
+                </li>
+  `;
+
+  return html
+}
