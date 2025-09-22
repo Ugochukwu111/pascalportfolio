@@ -65,19 +65,33 @@ ul{
 
 /*did this because i used h2 for my section headings i want that little space*/
 h2{
-  margin-bottom: 1em; 
+  margin: 1em 0; 
 }
 
 
 .profile-pic-container{
   border: 1px solid var(--black);
   box-shadow: 3px 3px 5px var(--grey);
-  width: 130px;  /* min 100px, scales with 20vw, max 200px */
-  height: 130px; 
+  width: 150px;  /* min 100px, scales with 20vw, max 200px */
+  height: 150px; 
   aspect-ratio: 1/1;
   margin: 1em;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.hire-me-btn{
+  border-radius: .5rem;
+  padding: .7em;
+  transform: all 350ms ease;
+}
+/* this didnt work  */
+.hire-me-btn:hover{
+  transform: translateY(-5px);
+}
+/* but this did i know css is weird */
+a{
+  transition: all 250ms ease;
 }
 
 

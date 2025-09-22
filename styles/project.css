@@ -1,0 +1,66 @@
+main{
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  place-self: center;
+  padding-top: 6em;
+}
+
+.project-more-info-container{
+  padding: 2.2em;
+  margin: 1em;
+  border: 1px dotted var( --blueish);
+  background-color: rgba(148, 213, 253, 0.441);
+  border-radius: 2rem;
+}
+
+
+.tech-used-container span{
+   background-color: var(--blueish);
+   margin: .25em;
+   padding: .25em;
+   border-radius: .5rem;
+   color: var(--white);
+}
+
+.project-extra-details p{
+   border-bottom: 1px solid var(--grey);
+  padding: .5em;
+  margin: .25em;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.next-project-links-container{
+  display: flex;
+  justify-content: space-around;
+}
+.next-project-links-container a{
+  padding: .8em 1.5em;
+  margin: .25em;
+  font-weight: 550;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px var(--grey);
+  transition: all 300ms ease;
+}
+
+.next-project-links-container a:hover{
+  transform: scale(1.1);
+}
+.next-project-links-container a:active{
+  opacity: .7;
+}
+.project-image-section{
+  padding: 5em 0;
+  justify-content: center;
+}
+.project-image-section figure{
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/.8;
+  border-radius: 2rem;
+  margin: 1em ;
+}

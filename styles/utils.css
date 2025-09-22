@@ -150,11 +150,16 @@ p {
 .flex-row{flex-direction: row;}
 
 .justify-center{justify-content: center;}
+.justify-s-between{justify-content: space-between;}
 
 /* DISPLAY CENTERS */
 .flex-center{ display: flex; align-items: center; justify-content: center;}
 .align-center{align-items: center;}
+
+
 .align-start{align-items: start;}
+
+.f-wrap{flex-wrap: wrap;}
 
 .grid-center{display: grid; place-items: center;}
 .block-center{display: block; margin-inline: auto;}
@@ -301,3 +306,6 @@ p {
   text-transform: capitalize;
   font-family: var(--font-ui);
 }
+
+/* ========== RANDOM UTLITIES NEEDED */
+.w-100{width: 100%;}
