@@ -1,4 +1,4 @@
-import { generateProjectCard, generateEcperienceListHTML } from './generatedhtml/views.js';
+import { generateProjectCard, generateEcperienceListHTML, Footer } from './generatedhtml/views.js';
 import { myProjects } from './data/projects.js';
 import { popUpContainer } from './utils/utils.js';
 import { myExperiences } from './data/experience.js';
@@ -6,13 +6,17 @@ import { myExperiences } from './data/experience.js';
 
 const projectContainerEl = document.querySelector('.project-container');
 
+Footer('footer-container');
+
+
 (()=>{
 let productCard = '';
 myProjects.forEach((product)=>{
 const tools = product.tools.map(tool => `<li>${tool}</li>`);
 const listOfToolsUsed = tools.join('');
-   productCard += generateProjectCard(product.image, product.name, product.description, listOfToolsUsed, product.url);
-
+   productCard += generateProjectCard(
+      product.image, product.name, product.description, listOfToolsUsed, product.url,product.id
+   );
 });
 projectContainerEl.innerHTML = productCard ;
 })();//generates project-card elememt

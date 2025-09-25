@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="asset/favicon-32x32.png">
   <link rel="stylesheet" href="/styles/utils.css">
   <link rel="stylesheet" href="/styles/project.css">
 
   <title>Document</title>
 </head>
-<body class="d-flex justify-center">
+<body class="d-flex justify-center flex-column">
 
-  <nav>
-
+  <nav id="nav-bar">
+   <!-- injected wiht Js  -->
   </nav>
   
   <main >
@@ -30,7 +31,7 @@
           <h3>
             Description
           </h3>
-          <p>
+          <p id="project-more-description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus, quis modi autem fuga iure voluptatum ad ullam in inventore earum natus labore voluptatibus laudantium. Voluptatem quibusdam ad eveniet qui.
           </p>
         </div>
@@ -62,28 +63,33 @@
         <div class="d-flex f-wrap justify-s-between project-extra-details">
           <p >
             <span>Date</span>
-            <span>2024</span>
+            <span id="project-date">2024</span>
           </p>
           <p>
             <span>Type</span>
-            <span>Ecommerce</span>
+            <span id="project-type">Ecommerce</span>
           </p>
           <p>
             <span>Client</span>
-            <span>DIICT</span>
+            <span id="project-client">DIICT</span>
           </p>
         </div>
       </div>
 
     </section>
 
-    <div class="w-100 next-project-links-container">
-      <a href="" class="bg-green text-green-dark text-icon-container">
+    <div  class="w-100 next-project-links-container f-wrap">
+       <a href="" class="bg-black text-white text-icon-container" id="previous-project-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-up-left-icon lucide-corner-up-left"><path d="M20 20v-7a4 4 0 0 0-4-4H4"/><path d="M9 14 4 9l5-5"/></svg>
+         Back
+       </a>
+
+      <a href="" id="project-link" class="bg-green text-green-dark text-icon-container">
         Explore Project
         <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-binoculars-icon lucide-binoculars"><path d="M10 10h4"/><path d="M19 7V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/><path d="M20 21a2 2 0 0 0 2-2v-3.851c0-1.39-2-2.962-2-4.829V8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2z"/><path d="M 22 16 L 2 16"/><path d="M4 21a2 2 0 0 1-2-2v-3.851c0-1.39 2-2.962 2-4.829V8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2z"/><path d="M9 7V4a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v3"/></svg>
       </a>
 
-      <a href="" class="text-green bg-green-dark text-icon-container">
+      <a href="" id="next-project-link" class="text-green bg-green-dark text-icon-container">
         Next 
         <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-forward-icon lucide-forward"><path d="m15 17 5-5-5-5"/><path d="M4 18v-2a4 4 0 0 1 4-4h12"/></svg>
       </a>
@@ -91,21 +97,21 @@
 
     <section class="d-flex f-wrap project-image-section">
       <figure >
-        <img src="" alt="">
+        <img  id="project-img1" src="" alt="">
       </figure>
       <figure>
-        <img src="" alt="">
+        <img id="project-img2" src="" alt="">
       </figure>
       <figure>
-        <img src="" alt="">
+        <img id="project-img3" src="" alt="">
       </figure>
     </section>
   </main>
    
-  <footer>
-
+  <footer id="footer-container">
+   
   </footer>
 
-  <script src="/scripts/viewProject.js"></script>
+  <script type="module" src="/scripts/viewProject.js"></script>
 </body>
 </html>

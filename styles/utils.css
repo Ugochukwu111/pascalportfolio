@@ -309,3 +309,68 @@ p {
 
 /* ========== RANDOM UTLITIES NEEDED */
 .w-100{width: 100%;}
+
+
+ nav{
+  display: flex;
+  justify-content: center;
+  /* width: fit-content;
+  display: grid;
+  place-self: center;
+  z-index: 100;  */
+}
+ nav ul{
+  display: flex;
+  padding: .5em 1em;
+  border-radius: 2rem;
+  margin: .5em;
+  border: 1px solid black;
+  backdrop-filter: blur(1px);
+  position: fixed;
+  z-index: 110;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: .25em .5em;
+  display: flex;
+}
+
+nav ul li a{
+ border: 1px solid black;;
+ width: 100%;
+ padding: .25em;
+ border-radius: .5rem;
+}
+nav ul li a svg{
+  color: var(--black);
+} 
+
+/* ============= FOOOTER STYLES =============== */
+footer{
+  padding: 2em 0;
+}
+.social-icons-container{
+  justify-content: center;
+}
+.social-icons-container li {
+ width: 40px;
+ height: 40px;
+ margin: .5em;
+ display: flex;
+}
+.social-icons-container li a{
+ width: 100%;
+ display: grid;
+ place-items: center;
+}
+.social-icons-container li a svg{
+  color: var(--grey);
+  transition: all .2s ease;
+}
+.social-icons-container li a svg:hover{
+  color: var(--black);
+  transform: scale(1.3)
+}

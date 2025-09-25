@@ -5,6 +5,9 @@ main{
   place-self: center;
   padding-top: 6em;
 }
+ul{
+  list-style: none;
+}
 
 .project-more-info-container{
   padding: 2.2em;
@@ -30,7 +33,7 @@ main{
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
   justify-content: center;
 }
 
@@ -63,4 +66,7 @@ main{
   aspect-ratio: 1/.8;
   border-radius: 2rem;
   margin: 1em ;
+  border: 5px solid var(--black);
+  box-shadow: 4px 4px 10px var(--grey);
+  background-color: var(--grey);
 }
