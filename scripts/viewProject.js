@@ -5,10 +5,10 @@ import { observeHeadings } from './observer.js';
 
  observeHeadings(
     (heading) => {
-      console.log("Visible:", heading.tagName, heading.textContent.trim());
+      
     },
     (heading) => {
-      console.log("Left view:", heading.tagName, heading.textContent.trim());
+      
     }
   );
 
@@ -23,6 +23,11 @@ const id = params.get('id');
 const project =  myProjects.find(p => p.id == id);
 let myProjectsTotalNumber = myProjects.length;
 
+
+let previousEl = document.getElementById('previous-project-link');
+let exploreEl = document.getElementById('project-link');
+let nextEl = document.getElementById('next-project-link');
+
 function handleNextProject(current, total){
   let currentId = Number(current);
   let totalProjectNumber = Number(total);
@@ -31,13 +36,13 @@ function handleNextProject(current, total){
   if (currentId === totalProjectNumber){
     newId = currentId;
   }
-  if(currentId < totalProjectNumber){
+  if(currentId < totalProjectNumber ){
     newId = currentId + 1;
   }
   return newId;
 }
 
-let nextId = handleNextProject(id, myProjectsTotalNumber);
+
 
 function handlePreviousProject(current, total){
   let currentId = Number(current);
@@ -52,7 +57,7 @@ function handlePreviousProject(current, total){
   return newId;
 }
 
-let previousId = handlePreviousProject(id, myProjectsTotalNumber);
+
 
 
 let nameEl = document.getElementById('project-name') ;
@@ -62,9 +67,6 @@ let technologyContainer = document.getElementById('tech-used-container');
 let dateEl = document.getElementById('project-date');
 let typeEl = document.getElementById('project-type')
 let clientEl = document.getElementById('project-client');
-let previousEl = document.getElementById('previous-project-link');
-let exploreEl = document.getElementById('project-link');
-let nextEl = document.getElementById('next-project-link');
 let image1El = document.getElementById('project-img1');
 let image2El = document.getElementById('project-img2');
 let image3El = document.getElementById('project-img3');
@@ -87,13 +89,43 @@ function updateProjectDetails(project) {
   image3El.alt = project.name;
 
   exploreEl.href = project.url;
-  nextEl.href=`project.html?id=${nextId}`;
-  previousEl.href=`project.html?id=${previousId}`;
+  // nextEl.href=`project.html?id=${nextId}`;
+  // previousEl.href=`project.html?id=${previousId}`;
   
 const tools = project.tools.map(tool => `<li>${tool}</li>`);
 const listOfToolsUsed = tools.join('');
-technologyContainer.innerHTML += listOfToolsUsed;
+technologyContainer.innerHTML = listOfToolsUsed;
 
 }
 
-updateProjectDetails(project)
+updateProjectDetails(project);
+
+let currentId = Number(id); // track current project
+
+previousEl.addEventListener("click", () => {
+  let previousId = handlePreviousProject(currentId, myProjectsTotalNumber);
+  const newProject = myProjects.find(p => p.id == previousId);
+
+  updateProjectDetails(newProject);
+  history.pushState({}, "", `?id=${previousId}`);
+
+  currentId = previousId; // update tracker
+});
+
+nextEl.addEventListener("click", () => {
+  let nextId = handleNextProject(currentId, myProjectsTotalNumber);
+  const newProject = myProjects.find(p => p.id == nextId);
+
+  updateProjectDetails(newProject);
+  history.pushState({}, "", `?id=${nextId}`);
+
+  currentId = nextId; // update tracker
+});
+
+window.addEventListener("popstate", () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  currentId = Number(id);
+  const newProject = myProjects.find(p => p.id == currentId);
+  if (newProject) updateProjectDetails(newProject);
+});

@@ -6,10 +6,8 @@ import { observeHeadings } from './observer.js';
 
   observeHeadings(
     (heading) => {
-      console.log("Visible:", heading.tagName, heading.textContent.trim());
     },
     (heading) => {
-      console.log("Left view:", heading.tagName, heading.textContent.trim());
     }
   );
 

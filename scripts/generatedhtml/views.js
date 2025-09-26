@@ -107,6 +107,9 @@ export function Footer(footerContainer){
                 </a>
               </li> 
             </ul>
+             <p class = "text-center font-small">
+              Built with  HTML, CSS & JS
+             </p>
             </div>
   `;
 

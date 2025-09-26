@@ -116,13 +116,14 @@ h1, h2, h3 {
 
 
 h1 {
-  font-size: clamp(1.5rem, 5vw, 2.3rem); /* Between 32px and 48px */
+  font-size: clamp(2rem, 5vw, 2.8rem); /* Between 32px and 48px */
+  line-height: 1;
 }
 h2 {
-  font-size: clamp(1.1rem, 4.5vw, 1.9rem); /* Between 28px and 40px */
+  font-size: clamp(1.8rem, 4.5vw, 2.3rem); /* Between 28px and 40px */
 }
 h3 {
-  font-size: clamp(1rem, 4vw, 1.6rem); /* Between 25px and 35px */
+  font-size: clamp(1.5rem, 4vw, 2rem); /* Between 25px and 35px */
 }
 h4 {
   font-size: clamp(1.4rem, 3.5vw, 2rem); /* Between 22px and 32px */
