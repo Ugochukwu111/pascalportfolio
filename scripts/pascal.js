@@ -2,11 +2,22 @@ import { generateProjectCard, generateEcperienceListHTML, Footer } from './gener
 import { myProjects } from './data/projects.js';
 import { popUpContainer } from './utils/utils.js';
 import { myExperiences } from './data/experience.js';
+import { observeHeadings } from './observer.js';
+
+  observeHeadings(
+    (heading) => {
+      console.log("Visible:", heading.tagName, heading.textContent.trim());
+    },
+    (heading) => {
+      console.log("Left view:", heading.tagName, heading.textContent.trim());
+    }
+  );
 
 
 const projectContainerEl = document.querySelector('.project-container');
 
 Footer('footer-container');
+
 
 
 (()=>{

@@ -70,3 +70,11 @@ ul{
   box-shadow: 4px 4px 10px var(--grey);
   background-color: var(--grey);
 }
+
+#tech-used-container li{
+  background-color: var(--blueish);
+  padding: .25em .5em;
+  border-radius: 2rem;
+  margin: .2em;
+  color: var(--white);
+}

@@ -1,6 +1,16 @@
 import { Footer } from "./generatedhtml/views.js";
 import { GenerateNavBarHTML } from '../htmlComponents/components.js';
 import { myProjects } from "./data/projects.js";
+import { observeHeadings } from './observer.js';
+
+ observeHeadings(
+    (heading) => {
+      console.log("Visible:", heading.tagName, heading.textContent.trim());
+    },
+    (heading) => {
+      console.log("Left view:", heading.tagName, heading.textContent.trim());
+    }
+  );
 
 GenerateNavBarHTML('nav-bar');
 Footer('footer-container');
@@ -11,7 +21,6 @@ const id = params.get('id');
 
 
 const project =  myProjects.find(p => p.id == id);
-
 let myProjectsTotalNumber = myProjects.length;
 
 function handleNextProject(current, total){
@@ -46,7 +55,7 @@ function handlePreviousProject(current, total){
 let previousId = handlePreviousProject(id, myProjectsTotalNumber);
 
 
-let nameEl = document.getElementById('project-name');
+let nameEl = document.getElementById('project-name') ;
 let descriptionEl = document.getElementById('project-description');
 let longDescriptionEl = document.getElementById('project-more-description');
 let technologyContainer = document.getElementById('tech-used-container');
@@ -62,7 +71,7 @@ let image3El = document.getElementById('project-img3');
 
 
 function updateProjectDetails(project) {
-  nameEl.textContent = project.name;
+  nameEl.textContent = project.name || 'project name';
   descriptionEl.textContent = project.description;
   longDescriptionEl.textContent = project.longDescription;
   dateEl.textContent = project.extraInfo.date || 'date';
@@ -81,7 +90,9 @@ function updateProjectDetails(project) {
   nextEl.href=`project.html?id=${nextId}`;
   previousEl.href=`project.html?id=${previousId}`;
   
-  
+const tools = project.tools.map(tool => `<li>${tool}</li>`);
+const listOfToolsUsed = tools.join('');
+technologyContainer.innerHTML += listOfToolsUsed;
 
 }
 
