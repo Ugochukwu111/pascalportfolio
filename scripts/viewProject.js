@@ -109,7 +109,8 @@ previousEl.addEventListener("click", () => {
   updateProjectDetails(newProject);
   history.pushState({}, "", `?id=${previousId}`);
 
-  currentId = previousId; // update tracker
+  currentId = previousId;
+  window.scrollTo(0,0);
 });
 
 nextEl.addEventListener("click", () => {
@@ -118,8 +119,9 @@ nextEl.addEventListener("click", () => {
 
   updateProjectDetails(newProject);
   history.pushState({}, "", `?id=${nextId}`);
+  currentId = nextId;
+  window.scrollTo(0,0);
 
-  currentId = nextId; // update tracker
 });
 
 window.addEventListener("popstate", () => {
