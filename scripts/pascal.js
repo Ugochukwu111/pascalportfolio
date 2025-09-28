@@ -1,8 +1,7 @@
 import { generateProjectCard, generateEcperienceListHTML, Footer } from './generatedhtml/views.js';
 import { myProjects } from './data/projects.js';
-import { popUpContainer } from './utils/utils.js';
 import { myExperiences } from './data/experience.js';
-import { observeHeadings } from './observer.js';
+import { observeHeadings, createObserver } from './observer.js';
 
   observeHeadings(
     (heading) => {
@@ -10,6 +9,9 @@ import { observeHeadings } from './observer.js';
     (heading) => {
     }
   );
+
+  const allSections = document.querySelectorAll('section');
+  createObserver(allSections, "fade-in-up");
 
 
 const projectContainerEl = document.querySelector('.project-container');
@@ -41,9 +43,9 @@ projectContainerEl.innerHTML = productCard ;
 })()
 
 
-
-const allProjectCard = document.querySelectorAll('.project-card');
+  const allProjectCard = document.querySelectorAll('.project-card');
 if(allProjectCard){
+
     allProjectCard.forEach((card)=>{
       card.addEventListener('click',(e)=>{
          if (e.target instanceof HTMLImageElement){

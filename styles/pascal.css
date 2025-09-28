@@ -102,6 +102,7 @@ a{
   box-shadow: 1px 1px 3px var(--grey);
 }
 
+
 .project-card figure{
   height: 230px;
   background-color: var(--blue);
@@ -220,6 +221,22 @@ textarea, input::placeholder{
   background-position: center;
   background-size: cover;
 }
+
+/* ============  sections Js observer classlist*/
+section{
+ transform: translateY(40px);
+ opacity: .5;
+ transition:all 1s ease;
+}
+
+
+.fade-in-up {
+  opacity: 1;
+  transform: translateY(0px);
+  animation:all 1s ease;
+}
+
+
 
 
 

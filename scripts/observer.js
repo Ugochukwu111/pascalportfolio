@@ -18,3 +18,28 @@ export function observeHeadings(onEnter, onLeave) {
 
   headings.forEach(h => observer.observe(h));
 }
+
+
+export function createObserver(elements, animationClass, options = {}) {
+  const defaultOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: .5, 
+  };
+
+  const mergedOptions = { ...defaultOptions, ...options };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(animationClass);
+        obs.unobserve(entry.target); // animate once
+      }
+    });
+  }, mergedOptions);
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+}
+
