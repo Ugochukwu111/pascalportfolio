@@ -24,7 +24,7 @@ export function createObserver(elements, animationClass, options = {}) {
   const defaultOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: .5, 
+    threshold: .3, 
   };
 
   const mergedOptions = { ...defaultOptions, ...options };

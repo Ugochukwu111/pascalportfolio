@@ -51,7 +51,7 @@ young passionate developer">
 <body>
 
   <div class="d-flex master-container">
-    <div class="notification-container hide">
+    <div class="popup-container hide">
     </div>
 
      <nav>
@@ -209,7 +209,7 @@ young passionate developer">
 
                   <form action="" id="contact-me-form" class="d-flex flex-column">
                     <div class="d-flex">
-                      <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                      <input type="text" name="name" id="name" placeholder="Name" required>
                       <input type="email" name="email" id="email" placeholder="Email Address" required>
                     </div>
                     <div class="d-flex">
@@ -217,10 +217,10 @@ young passionate developer">
                     </div>
                   
 
-                    <button type="submit" 
+                    <button id="submit-form-btn" type="submit" 
                         class="FWB text-center text-white contact-me-btn justify-center text-icon-container">
                       Send Message
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
+                      <svg class ="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg>
                     </button>
                   </form>
               </section>
@@ -233,6 +233,7 @@ young passionate developer">
     </div>
   </div>
   
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="module" src="scripts/pascal.js"></script>
 </body>
 </html>

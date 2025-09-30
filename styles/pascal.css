@@ -220,6 +220,22 @@ textarea, input::placeholder{
   background-image: url('/asset/black-abstract-background.jpg');
   background-position: center;
   background-size: cover;
+  overflow: hidden; /* hide when icon moves outside */
+  position: relative; /* needed for absolute child */
+}
+
+.moving-icon {
+  animation: slide 2.5s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform:  translateX(0%);
+  }
+  to {
+    transform:  translateX(200%);
+  }
+  
 }
 
 /* ============  sections Js observer classlist*/
