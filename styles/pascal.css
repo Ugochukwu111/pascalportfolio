@@ -75,6 +75,20 @@ a{
   justify-content: end;
 }
 
+.intro-btn-container a{
+  border-radius: .5rem;
+  padding: .7em;
+  transform: all 350ms ease;
+  margin: .25em;
+  cursor: pointer;
+}
+#get-to-know-me-link:hover{
+  opacity: .8;
+}
+#get-to-know-me-link:active{
+  opacity: .6;
+}
+
 
 /* ==================== PROJECT SECTION ===========*/
 .project-container{
