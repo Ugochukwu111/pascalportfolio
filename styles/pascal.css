@@ -54,6 +54,15 @@ h2{
   border-radius: 50%;
   overflow: hidden;
 }
+@media (max-width: 320px) {
+  .profile-pic-container {
+    width: 100px;
+    height: 100px ;
+  }
+  aside{
+    margin-top: 5em;
+  }
+}
 
 .hire-me-btn{
   border-radius: .5rem;
