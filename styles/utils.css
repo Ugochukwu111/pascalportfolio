@@ -159,6 +159,7 @@ p {
 .d-grid{display: grid;}
 .d-block{display: block;}
 .d-inline-b{display: inline-block;}
+.flex1{flex: 1;}
 
 /* FLEX DIRECTION */
 .flex-column{flex-direction: column;}

@@ -116,9 +116,11 @@ a{
   background-color: var(--white);
   border: .5px solid var(--grey);
   padding: .5em .8em;
-  /* height: fit-content; */
+  height: 450px;
   border-radius: .5rem;
   transition: all 300ms ease;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover{
   transform: translateY(-10px);
@@ -135,6 +137,10 @@ a{
 
 .project-description{
   font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .project-card figure{

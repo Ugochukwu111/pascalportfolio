@@ -4,7 +4,7 @@ export function generateProjectCard(image, name, desc, tools, demoLink, id){
                   <figure>
                     <img src="${image[0]}" alt="${name}">
                   </figure>
-                  <div>
+                  <div class="flex1">
                     <p class="project-description">
                       <strong class="d-block text-blue-dark text-end">${name}</strong>
                       ${desc}
