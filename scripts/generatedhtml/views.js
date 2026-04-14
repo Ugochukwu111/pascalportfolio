@@ -72,11 +72,12 @@ export function generateEcperienceListHTML (timeLine, role, company){
 }
 
 export function Footer(footerContainer){
+  const currentYear = new Date().getFullYear();
   const html = `
           <div>
               <br><hr><br> <br>
               <p class="text-center">
-            © 2025 Joseph Pascal
+            © ${currentYear} Joseph Pascal
             </p>      
             <ul class="social-icons-container d-flex">
               <li title="X">
