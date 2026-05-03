@@ -14,10 +14,6 @@ aside{
   align-items: center;
   padding: 2em;
   overflow: auto;
-  /* background-image: url('/images//coolbg.jpg');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 
@@ -96,6 +92,17 @@ a{
 }
 #get-to-know-me-link:active{
   opacity: .6;
+}
+
+.why-hire-me-container{
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap:.5em;
+}
+
+.why-hire-me-container span{
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 
