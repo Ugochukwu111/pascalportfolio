@@ -45,7 +45,6 @@ ul{
   padding: .8em 1.5em;
   margin: .25em;
   font-weight: 550;
-  border-radius: 2rem;
   box-shadow: 2px 2px 5px var(--grey);
   transition: all 300ms ease;
 }

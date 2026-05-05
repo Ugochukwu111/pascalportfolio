@@ -27,6 +27,7 @@ let myProjectsTotalNumber = myProjects.length;
 let previousEl = document.getElementById('previous-project-link');
 let exploreEl = document.getElementById('project-link');
 let nextEl = document.getElementById('next-project-link');
+let repoBtn = document.querySelector('.view-repo-link');
 
 function handleNextProject(current, total){
   let currentId = Number(current);
@@ -79,6 +80,13 @@ function updateProjectDetails(project) {
   dateEl.textContent = project.extraInfo.date || 'date';
   typeEl.textContent = project.extraInfo.type || 'type';
   clientEl.textContent = project.extraInfo.client || 'client';
+
+  if (project.isRepoPrivate){
+    repoBtn.textContent = 'Private Github Repo';
+  }else{
+     repoBtn.textContent = 'Public Github Repo';
+     repoBtn.href = project.repoLink;
+  }
 
   image1El.src= project.image[0];
   image2El.src = project.image[1];

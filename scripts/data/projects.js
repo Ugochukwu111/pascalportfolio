@@ -20,6 +20,8 @@ export const myProjects = [
       type: "Real Estate",
       client: "Freelance",
     },
+    isRepoPrivate: true,
+     repoLink:'',
   },
   {
     id: 2,
@@ -42,6 +44,8 @@ export const myProjects = [
       type: "Ecommerce",
       client: "Student Community",
     },
+    isRepoPrivate: false,
+    repoLink:'htppS:asnsan',
   },
   {
     id: 3,
@@ -63,6 +67,8 @@ export const myProjects = [
       type: "E-learning",
       client: "Student Community",
     },
+    isRepoPrivate: false,
+     repoLink:'htppS:asnsan',
   },
   {
     id: 4,
@@ -85,5 +91,7 @@ export const myProjects = [
       type: "Fintech",
       client: "Freelance",
     },
+    isRepoPrivate: false,
+    repoLink:'htppS:asnsan',
   },
 ];
