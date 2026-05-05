@@ -349,8 +349,8 @@ p {
 }
  nav ul{
   display: flex;
-  padding: .5em 1em;
-  border-radius: 2rem;
+  padding: .35em .25em;
+  border-radius: .5rem;
   margin: .5em;
   border: 1px solid black;
   backdrop-filter: blur(1px);
@@ -359,21 +359,25 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-shadow: 2px 2px 4px var(--grey);
 }
 
 nav ul li {
-  margin: .25em .5em;
+  margin: .15em .35em;
   display: flex;
+  width: 25px;
 }
 
 nav ul li a{
  border: 1px solid black;;
  width: 100%;
- padding: .25em;
- border-radius: .5rem;
+ padding: .15em;
+ border-radius: .25em;
+ display: flex;
 }
 nav ul li a svg{
   color: var(--black);
+  flex-shrink: 0;
 } 
 
 /* ============= FOOOTER STYLES =============== */
