@@ -1,6 +1,56 @@
 export const myProjects = [
+{
+    id: 1, // or the next sequence number
+    image: [
+      "../images/project/land-real-estate/land-real-estate-dashboard.webp",
+      "../images/project/land-real-estate/land-real-estate-auth.webp",
+      "../images/project/land-real-estate/land-real-estate-open-deal.webp",
+    ],
+    name: "Land Real Estate",
+    description:
+      "[ON-GOING] A high-performance land acquisition platform engineered with an 'Idealist Builder' mindset, focusing on bridging the gap between digital accessibility and secure real estate investment.",
+    longDescription:
+      "This web app is a study in industrial-level frontend architecture. Built with React and modular JavaScript, the project prioritizes developer experience (DX) and scalability through a split-component structure and a strict 'action-level' commit history. I focused on building a high-trust UI for land investment, ensuring the codebase follows enterprise standards like clean separation of concerns and robust documentation in the README. While currently a frontend-heavy MVP, the architecture is designed for a seamless transition into a full MERN stack integration, emphasizing clean code over superficial complexity.",
+    tools: ["REACT", "JAVASCRIPT", "CSS", "GIT", "VITE"],
+
+    moreInfo: "",
+    url: "https://github.com/Ugochukwu111/land-real-estate-management-dashboard",
+    extraInfo: {
+      date: "Ongoing 2026",
+      type: "Real Estate & Fintech",
+      client: "Investment Startup MVP",
+    },
+    isRepoPrivate: false,
+    repoLink: 'https://github.com/Ugochukwu111/land-real-estate-management-dashboard', 
+},
+{
+  id: 2,
+  image: [
+    "../images/project/jcin/toyp-hero.webp",
+    "../images/project/jcin/jcin-commit-graph.webp",
+    "../images/project/jcin/jcin-contributors.webp",
+    
+  ],
+  name: "TOYP Nomination Platform (JCIN UNIBEN)",
+  description:
+    "A high-impact nomination platform for the Ten Outstanding Young Persons (TOYP) initiative, rebuilt through a collaborative effort with the JCIN UNIBEN dev team. Brought in to elevate the product experience, I led key UI improvements—redesigning the hero section with modern stacked card interactions and transforming a friction-heavy single-page form into a streamlined multi-step flow, significantly improving usability and completion rates.",
+
+  longDescription:
+    "This project involved enhancing an existing nomination platform used for the Ten Outstanding Young Persons (TOYP) program. I joined an active team of developers at JCIN UNIBEN and contributed by rethinking critical parts of the user experience to better align with modern UI standards and user expectations.\n\nMy primary focus was on improving engagement and reducing drop-off during the nomination process. I redesigned the hero section using a dynamic stacked card layout to immediately capture attention and communicate value. More importantly, I re-architected the nomination form—breaking it down from a long, overwhelming single-page form into a structured multi-step experience. This significantly improved clarity, reduced cognitive load, and made the process feel more achievable for users.\n\nBeyond implementation, this project reflects my ability to step into an existing codebase, collaborate effectively with a team, identify high-impact improvements, and execute changes that directly enhance product usability and user trust. It highlights both my UI/UX thinking and my strength as a frontend engineer working in real-world team environments.",
+
+  tools: ['html', 'css', 'javascript',],
+  moreInfo: "",
+  url: "https://toyp.jcinuniben.com/",
+  extraInfo: {
+    date: "April 2026",
+    type: "Web Application / Nomination Platform",
+    client: "JCIN UNIBEN (Collaborative Project)",
+  },
+  isRepoPrivate: true,
+  repoLink: "",
+},
   {
-    id: 1,
+    id: 3,
     image: [
       "../images/project/dilux/dilux-contact-us.png",
       "../images/project/dilux/dilux-difference.png",
@@ -24,7 +74,7 @@ export const myProjects = [
      repoLink:'',
   },
   {
-    id: 2,
+    id: 4,
     image: [
       "../images/project/aroundCampusNG/aroundcampus-listingpage.png",
       "../images/project/aroundCampusNG/aroundcampus steps.png",
@@ -45,10 +95,10 @@ export const myProjects = [
       client: "Student Community",
     },
     isRepoPrivate: false,
-    repoLink:'htppS:asnsan',
+    repoLink:'https://github.com/Ugochukwu111/Around-Campus',
   },
   {
-    id: 3,
+    id: 5,
     image: [
       "../images/project/quizCampus/quizcampus-quiz.png",
       "../images/project/quizCampus/quiz.png",
@@ -68,10 +118,10 @@ export const myProjects = [
       client: "Student Community",
     },
     isRepoPrivate: false,
-     repoLink:'htppS:asnsan',
+     repoLink:'https://github.com/Ugochukwu111/questions',
   },
   {
-    id: 4,
+    id: 6,
     image: [
       "../images/project/wePay/wePay-home.png",
       "../images/project/wePay/wepay-dashboard.png",
