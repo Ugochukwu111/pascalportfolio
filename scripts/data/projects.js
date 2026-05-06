@@ -38,7 +38,7 @@ export const myProjects = [
   longDescription:
     "This project involved enhancing an existing nomination platform used for the Ten Outstanding Young Persons (TOYP) program. I joined an active team of developers at JCIN UNIBEN and contributed by rethinking critical parts of the user experience to better align with modern UI standards and user expectations.\n\nMy primary focus was on improving engagement and reducing drop-off during the nomination process. I redesigned the hero section using a dynamic stacked card layout to immediately capture attention and communicate value. More importantly, I re-architected the nomination form—breaking it down from a long, overwhelming single-page form into a structured multi-step experience. This significantly improved clarity, reduced cognitive load, and made the process feel more achievable for users.\n\nBeyond implementation, this project reflects my ability to step into an existing codebase, collaborate effectively with a team, identify high-impact improvements, and execute changes that directly enhance product usability and user trust. It highlights both my UI/UX thinking and my strength as a frontend engineer working in real-world team environments.",
 
-  tools: ['html', 'css', 'javascript',],
+  tools: ['HTML', 'CSS', 'JAVASCRIPT'],
   moreInfo: "",
   url: "https://toyp.jcinuniben.com/",
   extraInfo: {
