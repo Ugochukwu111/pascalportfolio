@@ -41,13 +41,13 @@ h2{
 
 
 .profile-pic-container{
-  border: 1px solid var(--black);
+  border: 1px solid var(--grey);
   box-shadow: 3px 3px 5px var(--grey);
-  width: 150px;  /* min 100px, scales with 20vw, max 200px */
-  height: 150px; 
+  width: 100px;  /* min 100px, scales with 20vw, max 200px */
+  height: 100px; 
   aspect-ratio: 1/1;
   margin: 1em;
-  border-radius: 50%;
+  border-radius: .5rem;
   overflow: hidden;
 }
 @media (max-width: 320px) {
