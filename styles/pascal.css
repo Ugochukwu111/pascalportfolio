@@ -105,6 +105,33 @@ a{
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
+.project-story-container-section{
+  padding: 2em  1em;
+}
+
+.project-story-container-section::before{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  border-radius: 2rem;
+  background-color: var(--blue-dark);
+  top: 0;
+  left: 0;
+}
+
+.project-story-container-section::after{
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  border-radius: 2rem;
+  background-color: var(--blue-dark);
+  bottom: 0;
+  right: 0;
+}
+
+
 
 /* ==================== PROJECT SECTION ===========*/
 .project-container{
@@ -114,8 +141,8 @@ a{
   align-items: center;
   gap: 1em;
   padding: 2.5em .5;
+  position: relative;
 }
-
 
 .project-card{
   width: 100%;
