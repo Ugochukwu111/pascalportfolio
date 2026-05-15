@@ -304,15 +304,15 @@ textarea, input::placeholder{
 /* ============  sections Js observer classlist*/
 section{
  transform: translateY(40px);
- opacity: .5;
- transition:all 1s ease;
+ opacity: .9;
+ transition:all .5s ease;
 }
 
 
 .fade-in-up {
   opacity: 1;
   transform: translateY(0px);
-  animation:all 1s ease;
+  animation:all .5s ease;
 }
 
 

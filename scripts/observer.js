@@ -13,7 +13,7 @@ export function observeHeadings(onEnter, onLeave) {
     });
   }, {
     root: null,
-    threshold: 0.8
+    threshold: 0.2
   });
 
   headings.forEach(h => observer.observe(h));
