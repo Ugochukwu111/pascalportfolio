@@ -140,7 +140,7 @@ a{
   place-items: center;
   align-items: center;
   gap: 1em;
-  padding: 2.5em .5;
+  padding: 2.5em ;
   position: relative;
 }
 
@@ -304,7 +304,7 @@ textarea, input::placeholder{
 /* ============  sections Js observer classlist*/
 section{
  transform: translateY(40px);
- opacity: .9;
+ opacity: 1;
  transition:all .5s ease;
 }
 
