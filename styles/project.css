@@ -10,8 +10,8 @@ ul{
 }
 
 .project-more-info-container{
-  padding: 2.2em;
-  margin: 1em;
+  padding: 2.2em 1em;
+  margin: 1em .25em;
   border: 1px dotted var( --blueish);
   background-color: rgba(148, 213, 253, 0.441);
   border-radius: 2rem;
