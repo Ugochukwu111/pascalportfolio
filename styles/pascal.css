@@ -65,7 +65,7 @@ h2{
   padding: .7em;
   transform: all 350ms ease;
 }
-/* this didnt work  */
+/* this didn't work  */
 .hire-me-btn:hover{
   transform: translateY(-5px);
 }
@@ -140,13 +140,12 @@ a{
   place-items: center;
   align-items: center;
   gap: 1em;
-  padding: 2.5em ;
+  padding: 2.5em .25em;
   position: relative;
 }
 
 .project-card{
   width: 100%;
-  max-width: 330px;
   background-color: var(--white);
   border: .5px solid var(--grey);
   padding: .5em .8em;
@@ -173,6 +172,7 @@ a{
   font-size: .9rem;
   display: -webkit-box;
   -webkit-line-clamp: 4; 
+   line-clamp: 4;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
@@ -304,7 +304,7 @@ textarea, input::placeholder{
 /* ============  sections Js observer classlist*/
 section{
  transform: translateY(40px);
- opacity: 1;
+ opacity: .9;
  transition:all .5s ease;
 }
 
