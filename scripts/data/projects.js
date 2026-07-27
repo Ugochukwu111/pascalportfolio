@@ -1,6 +1,6 @@
 export const myProjects = [
   {
-    id: 1, // or the next sequence number
+    id: 1,
     image: [
       "../images/project/land-real-estate/land-real-estate-dashboard.webp",
       "../images/project/land-real-estate/land-real-estate-auth.webp",
@@ -8,19 +8,36 @@ export const myProjects = [
     ],
     name: "Land Real Estate",
     description:
-      "[ON-GOING]A real estate platform focused on simplifying land acquisition workflows and improving user trust., focusing on improving how agents track and manage real estate leads in a simple and efficient way.",
+      "[PRODUCTION MVP] Designed, engineered, and deployed a production-ready real estate management platform powering referrals, onboarding, and administrative operations with secure authentication, scalable architecture, and real-world production usage..",
     longDescription:
-      "This project focused on building a maintainable and scalable frontend structure using React and modular JavaScript. The project prioritizes developer experience (DX) and scalability through a split-component structure and a strict 'action-level' commit history. I focused on building a high-trust UI for land investment, ensuring the codebase follows enterprise standards like clean separation of concerns and documentation in the README. While currently a frontend-heavy MVP, the architecture is designed for a seamless transition into a full MERN stack integration, emphasizing clean code over superficial complexity.",
-    tools: ["REACT", "JAVASCRIPT", "CSS", "GIT", "VITE"],
+      "Designed, built, tested, deployed, and currently maintain this production-ready real estate platform from concept to launch. I owned the entire product lifecycle—from product design, UI/UX, and full-stack development to secure authentication, testing, deployment, database backups, and production infrastructure. The platform is actively used by real users in production and was engineered with scalability, maintainability, and user trust in mind, featuring role-based workflows and a robust architecture designed to support future growth.",
+    tools: [
+      "REACT",
+      "JAVASCRIPT",
+      "CSS",
+      "VITE",
+      "NODE.JS",
+      "EXPRESS.JS",
+      "MONGODB",
+      "MONGOOSE",
+      "JWT",
+      "PLAYWRIGHT",
+      "GIT",
+      "GITHUB",
+      "RENDER",
+      "REST API",
+      "SEO",
+      "RESPONSIVE DESIGN",
+    ],
 
     moreInfo: "",
-    url: "https://github.com/Ugochukwu111/land-real-estate-management-dashboard",
+    url: "https://app.diluxproperties.com.ng/",
     extraInfo: {
       date: "Ongoing 2026",
-      type: "Real Estate & Fintech",
-      client: "Investment Startup MVP",
+      type: "Land Real Estate & Fintech",
+      client: "Dilux Properties",
     },
-    isRepoPrivate: false,
+    isRepoPrivate: true,
     repoLink:
       "https://github.com/Ugochukwu111/land-real-estate-management-dashboard",
   },
