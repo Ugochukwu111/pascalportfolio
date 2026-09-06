@@ -51,6 +51,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f9f9f9; /* optional soft background */
+  scroll-behavior: smooth;
 }
 
 img,
@@ -470,33 +471,41 @@ p {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  /* width: fit-content;
-  display: grid;
-  place-self: center;
-  z-index: 100;  */
-}
-nav ul {
-  display: flex;
-  padding: 0.35em 0.25em;
-  border-radius: 0.5rem;
-  margin: 0.5em;
-  backdrop-filter: blur(1px);
   position: fixed;
   z-index: 110;
-  flex-wrap: wrap;
+  left: 50%;
+  top:.6rem;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  position: relative;
+
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.35rem;
 
-  background: rgba(163, 196, 243, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(18px) saturate(180%);
-  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  margin: 0;
+  padding: 0.25rem;
+
+  list-style: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: .5rem;
+
+  background: rgba(249, 249, 249, 0.72);
+
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
 
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.15),
-    inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    0 15px 40px rgba(0, 0, 0, 0.14),
+    0 4px 12px rgba(0, 0, 0, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
 
   overflow: hidden;
 }
@@ -509,47 +518,72 @@ nav ul::before {
 
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.22),
-    rgba(255, 255, 255, 0.04) 40%,
-    transparent 65%
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.08) 45%,
+    transparent 70%
   );
 
   pointer-events: none;
 }
 
 nav ul li {
-  margin: 0.15em 0.35em;
-  display: flex;
-  width: 25px;
+  position: relative;
+  z-index: 1;
+
+  width: auto;
+  margin: 0;
 }
 
 nav ul li a {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
 
-  color: var(--white);
+  border-radius: 0.9rem;
 
-  transition: all 0.3s ease;
+  color: var(--black);
+
+  transition:
+    transform 250ms ease,
+    background-color 250ms ease,
+    color 250ms ease,
+    box-shadow 250ms ease;
 }
 
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.12);
   color: var(--blueish);
-  transform: translateY(-2px);
+
+  background: rgba(163, 196, 243, 0.2);
+
+  transform: translateY(-4px);
+
   box-shadow:
-    0 4px 12px rgba(30, 144, 255, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    0 8px 18px rgba(30, 144, 255, 0.12),
+    inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+nav ul li a:active {
+  transform: translateY(-1px) scale(0.96);
 }
 
 nav ul li svg {
-  color: var(--black);
-  flex-shrink: 0;
-  width: 1.3rem;
-  height: 1.3rem;
-  transition: all 0.3s ease;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  color: currentColor;
+
+  stroke-width: 1.8;
+
+  transition: transform 250ms ease;
+}
+
+nav ul li a:hover svg {
+  transform: scale(1.08);
 }
 
 /* ============= FOOTER STYLES =============== */
