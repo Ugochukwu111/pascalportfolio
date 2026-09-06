@@ -5,6 +5,8 @@ import { observeHeadings, createObserver } from './observer.js';
 import { popUpContainer , } from './utils/utils.js'
 
 
+
+
 /**ANIMATIONS SCRIPTS USING OBSERVER */
   observeHeadings(
     (heading) => {
@@ -27,8 +29,11 @@ const popupContainerEl = document.querySelector('.popup-container');
 (()=>{
 let productCard = '';
 myProjects.forEach((product)=>{
-const tools = product.tools.map(tool => `<li>${tool}</li>`);
-const listOfToolsUsed = tools.join('');
+    const tools = product.tools
+      .slice(0, 5)
+      .map(tool => `<li>${tool}</li>`);
+
+    const listOfToolsUsed = tools.join('');
    productCard += generateProjectCard(
       product.image, product.name, product.description, listOfToolsUsed, product.url,product.id
    );
