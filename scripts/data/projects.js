@@ -1,6 +1,50 @@
 export const myProjects = [
   {
-    id: 1,
+id: 1,
+image: [
+"../images/project/100genius/100genius-home.webp",
+"../images/project/100genius/100genius-about-us.webp",
+"../images/project/100genius/100genius-popup.webp",
+],
+name: "100 Genius Academy",
+description:
+"A production-ready corporate website for a Nigerian tech education brand. I took an existing prototype and rebuilt its frontend in React, introducing reusable components, routing, responsive interfaces, form validation, and a custom backend for secure application email handling. I also handled deployment, domain configuration, environment variables, CORS, and ongoing maintenance.",
+
+longDescription:
+"I took over an initially vibe-coded prototype and transitioned it from a plain JavaScript implementation into a structured React codebase ready for real-world use. I developed the frontend independently, building reusable components, React Router navigation, shared Header and Footer components, responsive interfaces, modal state, and application form state and validation. I also designed and implemented selected sections of the experience, including the community popup, About Us, How It Works, and parts of the application page.\n\nOn the backend, I built a dedicated email service from scratch using Express and SendByte's REST API. Rather than calling the email service directly from the browser and exposing credentials that could potentially be extracted and abused, the frontend communicates with my backend, which handles the email request securely. The backend was intentionally kept lightweight and does not require a database for its current purpose.\n\nI handled the production infrastructure end-to-end, including frontend deployment, backend deployment, domain configuration, environment variables, and CORS configuration. The site is currently used by real prospective students to submit programme applications, and I continue to maintain and improve the platform. I also intentionally structured primary programme and contact routes directly into the navigation so users can reach key conversion points without having to search through the page. I am currently evaluating a future migration to Next.js to strengthen the site's SEO capabilities.",
+
+tools: [
+"REACT",
+"JAVASCRIPT",
+"TAILWIND CSS",
+"REACT ROUTER",
+"NODE.JS",
+"EXPRESS.JS",
+"SEND BYTE",
+"REST API",
+"FORM VALIDATION",
+"GIT",
+"GITHUB",
+"NETLIFY",
+"RENDER",
+"CORS",
+"RESPONSIVE DESIGN",
+"SEO",
+],
+
+moreInfo: "",
+url: "https://100genius.africa/",
+extraInfo: {
+date: "Ongoing 2026",
+type: "Corporate Website / Tech Education",
+client: "100 Genius Academy",
+},
+isRepoPrivate: true,
+repoLink: "",
+},
+
+  {
+    id: 2,
     image: [
       "../images/project/land-real-estate/land-real-estate-dashboard.webp",
       "../images/project/land-real-estate/land-real-estate-auth.webp",
@@ -10,7 +54,7 @@ export const myProjects = [
     description:
       "[PRODUCTION MVP] Designed, engineered, and deployed a production-ready real estate management platform powering referrals, onboarding, and administrative operations with secure authentication, scalable architecture, and real-world production usage..",
     longDescription:
-      "Designed, built, tested, deployed, and currently maintain this production-ready real estate platform from concept to launch. I owned the entire product lifecycle—from product design, UI/UX, and full-stack development to secure authentication, testing, deployment, database backups, and production infrastructure. The platform is actively used by real users in production and was engineered with scalability, maintainability, and user trust in mind, featuring role-based workflows and a robust architecture designed to support future growth.",
+      "Designed, built, tested, deployed, and currently maintain this production-ready real estate platform from concept to launch. I owned the entire product lifecycle—from product design, UI/UX, and full-stack development to secure authentication, testing, deployment, database backups, and production infrastructure. \n\n The platform is actively used by real users in production and was engineered with scalability, maintainability, and user trust in mind, featuring role-based workflows and a robust architecture designed to support future growth.",
     tools: [
       "REACT",
       "JAVASCRIPT",
@@ -42,7 +86,7 @@ export const myProjects = [
       "https://github.com/Ugochukwu111/land-real-estate-management-dashboard",
   },
   {
-    id: 2,
+    id: 3,
     image: [
       "../images/project/jcin/toyp-hero.webp",
       "../images/project/jcin/jcin-commit-graph.webp",
@@ -53,7 +97,7 @@ export const myProjects = [
       "A high-impact nomination platform for the Ten Outstanding Young Persons (TOYP) initiative, rebuilt through a collaborative effort with the JCIN UNIBEN dev team. Brought in to elevate the product experience, I led key UI improvements—redesigning the hero section with modern stacked card interactions and transforming a friction-heavy single-page form into a streamlined multi-step flow, significantly improving usability and completion rates.",
 
     longDescription:
-      "This project involved enhancing an existing nomination platform used for the Ten Outstanding Young Persons (TOYP) program. I joined an active team of developers at JCIN UNIBEN and contributed by rethinking critical parts of the user experience to better align with modern UI standards and user expectations. My primary focus was on improving engagement and reducing drop-off during the nomination process. I redesigned the hero section using a dynamic stacked card layout to immediately capture attention and communicate value. More importantly, I re-architected the nomination form—breaking it down from a long, overwhelming single-page form into a structured multi-step experience. This significantly improved clarity, reduced cognitive load, and made the process feel more achievable for users. Beyond implementation, this project reflects my ability to step into an existing codebase, collaborate effectively with a team, identify high-impact improvements, and execute changes that directly enhance product usability and user trust. It highlights both my UI/UX thinking and my strength as a frontend engineer working in real-world team environments.",
+      "This project involved enhancing an existing nomination platform used for the Ten Outstanding Young Persons (TOYP) program. I joined an active team of developers at JCIN UNIBEN and contributed by rethinking critical parts of the user experience to better align with modern UI standards and user expectations. \n\n My primary focus was on improving engagement and reducing drop-off during the nomination process. I redesigned the hero section using a dynamic stacked card layout to immediately capture attention and communicate value. More importantly, I re-architected the nomination form—breaking it down from a long, overwhelming single-page form into a structured multi-step experience. \n\n This significantly improved clarity, reduced cognitive load, and made the process feel more achievable for users. Beyond implementation, this project reflects my ability to step into an existing codebase, collaborate effectively with a team, identify high-impact improvements, and execute changes that directly enhance product usability and user trust. \n\n It highlights both my UI/UX thinking and my strength as a frontend engineer working in real-world team environments.",
 
     tools: ["HTML", "CSS", "JAVASCRIPT"],
     moreInfo: "",
@@ -67,7 +111,7 @@ export const myProjects = [
     repoLink: "",
   },
   {
-    id: 3,
+    id: 4,
     image: [
       "../images/project/dilux/dilux-contact-us.png",
       "../images/project/dilux/dilux-difference.png",
@@ -91,7 +135,7 @@ export const myProjects = [
     repoLink: "",
   },
   {
-    id: 4,
+    id: 5,
     image: [
       "../images/project/aroundCampusNG/aroundcampus-listingpage.png",
       "../images/project/aroundCampusNG/aroundcampus steps.png",
@@ -102,7 +146,7 @@ export const myProjects = [
     description:
       "A student-focused housing platform that allows students to easily post and find hostel spaces around their campuses, helping them earn from listings or find accommodation with ease.",
     longDescription:
-      "is a web app that makes it easier for students to find, filter, and share hostel accommodations. I built the platform using modular JavaScript, applying event delegation to manage dynamic UI events efficiently and OOP principles to keep the code structured and reusable. I also leveraged array methods (map, filter, forEach) for rendering and filtering listings, while connecting to a backend API with Fetch to load and submit data in real time. The design emphasizes responsive layouts, clean UI components, and usability, making the app functional across devices.",
+      "is a web app that makes it easier for students to find, filter, and share hostel accommodations. I built the platform using modular JavaScript, applying event delegation to manage dynamic UI events efficiently and OOP principles to keep the code structured and reusable. \n\n I also leveraged array methods (map, filter, forEach) for rendering and filtering listings, while connecting to a backend API with Fetch to load and submit data in real time. The design emphasizes responsive layouts, clean UI components, and usability, making the app functional across devices.",
     tools: ["HTML", "CSS", "JAVASCRIPT", "MONGO DB", "NODE JS", "EXPRESS"],
     moreInfo: "",
     url: "https://aroundcampus.ng",
@@ -115,7 +159,7 @@ export const myProjects = [
     repoLink: "https://github.com/Ugochukwu111/Around-Campus",
   },
   {
-    id: 5,
+    id: 6,
     image: [
       "../images/project/quizCampus/quizcampus-quiz.png",
       "../images/project/quizCampus/quiz.png",
@@ -125,7 +169,7 @@ export const myProjects = [
     description:
       "A tool/app that helps students practice past questions instead of traditional paper-based revision.",
     longDescription:
-      "is a lightweight web app built to help Nigerian students(UNIBEN) practice GST (General Studies) courses through interactive quizzes. I implemented it using vanilla JavaScript, HTML, and CSS, focusing on dynamic question rendering and user interaction. The quiz logic was built with loops, conditionals, and array methods (map, forEach, filter) to manage questions, track answers, and calculate scores in real time. I also applied DOM manipulation to update the UI dynamically, showing feedback and results without page reloads. The design is responsive and simple, making it easy for students to access the quizzes on any device.",
+      "is a lightweight web app built to help Nigerian students(UNIBEN) practice GST (General Studies) courses through interactive quizzes. I implemented it using vanilla JavaScript, HTML, and CSS, focusing on dynamic question rendering and user interaction. \n\n The quiz logic was built with loops, conditionals, and array methods (map, forEach, filter) to manage questions, track answers, and calculate scores in real time.  \n\n I also applied DOM manipulation to update the UI dynamically, showing feedback and results without page reloads. The design is responsive and simple, making it easy for students to access the quizzes on any device.",
     tools: ["HTML", "CSS", "JAVASCRIPT"],
     moreInfo: "",
     url: "https://quiz-campus.vercel.app/",

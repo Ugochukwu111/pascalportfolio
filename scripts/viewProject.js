@@ -80,7 +80,10 @@ function updateProjectDetails(project) {
   document.title = `${project.name} - Pascal's Portfolio `;
   nameEl.textContent = project.name || 'project name';
   descriptionEl.textContent = project.description;
+  
   longDescriptionEl.textContent = project.longDescription;
+  longDescriptionEl.style.whiteSpace = "pre-line";
+
   dateEl.textContent = project.extraInfo.date || 'date';
   typeEl.textContent = project.extraInfo.type || 'type';
   clientEl.textContent = project.extraInfo.client || 'client';
