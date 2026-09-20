@@ -1,6 +1,46 @@
 export const myProjects = [
   {
-    id: 1,
+  id: 1,
+  image: [
+    "../images/project/100genius/100genius-apply.webp",
+    "../images/project/100genius/100genius-home.webp",
+    "../images/project/100genius/100genius-popup.webp",
+  ],
+  name: "100 Genius Academy",
+
+  description:
+    "A corporate website built to help 100 Genius present its programmes, build trust with prospective students, and turn its digital presence into a direct channel for programme applications and enquiries.",
+
+  longDescription:
+    "I took over an early prototype and helped turn it into a production-ready digital presence for 100 Genius Academy. My focus was not only on building the website, but on making the experience support the organisation's primary goals—helping prospective students understand the programmes, reach the application process easily, and build confidence in the brand. I developed the platform independently, introduced a clearer structure and reusable components, and designed key sections such as the community experience, About Us, How It Works, and parts of the application flow. I also built the supporting email system required to process applications securely and continue to maintain and improve the platform as the organisation grows.",
+
+  tools: [
+    "REACT",
+    "JAVASCRIPT",
+    "TAILWIND CSS",
+    "REACT ROUTER",
+    "NODE.JS",
+    "EXPRESS.JS",
+    "SEND BYTE",
+    "REST API",
+    "NETLIFY",
+    "RENDER",
+    "RESPONSIVE DESIGN",
+    "SEO",
+  ],
+
+  moreInfo: "",
+  url: "https://100genius.africa/",
+  extraInfo: {
+    date: "Ongoing 2026",
+    type: "Corporate Website / Education",
+    client: "100 Genius Academy",
+  },
+  isRepoPrivate: true,
+  repoLink: "",
+},
+  {
+    id: 2,
     image: [
       "../images/project/land-real-estate/land-real-estate-dashboard.webp",
       "../images/project/land-real-estate/land-real-estate-auth.webp",
@@ -46,7 +86,7 @@ export const myProjects = [
   },
 
   {
-    id: 2,
+    id: 3,
     image: [
       "../images/project/jcin/toyp-hero.webp",
       "../images/project/jcin/jcin-commit-graph.webp",
@@ -74,7 +114,7 @@ export const myProjects = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: [
       "../images/project/dilux/dilux-contact-us.png",
       "../images/project/dilux/dilux-difference.png",
@@ -102,7 +142,7 @@ export const myProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: [
       "../images/project/aroundCampusNG/aroundcampus-listingpage.png",
       "../images/project/aroundCampusNG/aroundcampus steps.png",
@@ -131,7 +171,7 @@ export const myProjects = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: [
       "../images/project/quizCampus/quizcampus-quiz.png",
       "../images/project/quizCampus/quiz.png",
