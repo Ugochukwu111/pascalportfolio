@@ -152,3 +152,60 @@ window.addEventListener("popstate", () => {
   const newProject = myProjects.find(p => p.id == currentId);
   if (newProject) updateProjectDetails(newProject);
 });
+
+
+/*
+===========================================
+PROJECT DESCRIPTION AUDIO LOGIC
+===========================================
+*/ 
+//does it job too small to break down....
+let listenToProjectBtn = document.getElementById("listen-btn");
+
+let isPlayingProjectStory = false;
+let hasStartedProjectStory = false;
+
+const utterance = new SpeechSynthesisUtterance(project?.longDescription);
+utterance.rate = 0.92;
+utterance.pitch = 0.95;
+utterance.volume = 1;
+
+
+
+listenToProjectBtn?.addEventListener("click", () => {
+  if (isPlayingProjectStory) {
+    speechSynthesis.pause();
+
+    isPlayingProjectStory = false;
+
+    listenToProjectBtn.innerHTML = `
+      <span class="listen-icon">▶</span>
+      <span>Listen to project story</span>
+    `;
+
+  } else {
+    if (hasStartedProjectStory) {
+      speechSynthesis.resume();
+    } else {
+      speechSynthesis.speak(utterance);
+      hasStartedProjectStory = true;
+    }
+
+    isPlayingProjectStory = true;
+
+    listenToProjectBtn.innerHTML = `
+      <span class="listen-icon">▶</span>
+      <span>Playing</span>
+    `;
+  }
+});
+
+utterance.onend = () => {
+  isPlayingProjectStory = false;
+  hasStartedProjectStory = false;
+
+  listenToProjectBtn.innerHTML = `
+    <span class="listen-icon">▶</span>
+    <span>Listen to project story</span>
+  `;
+};
